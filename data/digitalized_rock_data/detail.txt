@@ -1,0 +1,6 @@
+digitalized data done with:
+with:
+deltax = 5px
+deltay = 5px
+
+
