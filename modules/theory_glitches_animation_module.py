@@ -34,7 +34,7 @@ fig = plt.figure()
 ax = fig.add_subplot(xlim=(8251, 9201), ylim=(-30000, 1))
 
 line, = plt.plot([],[])
-time_text = ax.text(0.02, 0.95, '', transform=ax.transAxes)
+phi_text = ax.text(0.02, 0.95, '', transform=ax.transAxes)
 
 plt.xlim(8251,9201)
 plt.ylim(-30000,1)
@@ -51,8 +51,8 @@ while angle_init<=angle_finale:
 
 def init():
     line.set_data([],[])
-    time_text.set_text('')
-    return line, time_text,
+    phi_text.set_text('')
+    return line, phi_text,
         
 def animate(i):
     j=0
@@ -64,9 +64,9 @@ def animate(i):
         j+=1
                       
     line.set_data(Xdeux,Ydeux)  # update the data.
-    time_text.set_text('time = '+ str(phi_list[int(i)]))
+    phi_text.set_text('phi = '+ str(phi_list[int(i)]))
     
-    return line, time_text,
+    return line, phi_text,
 
 # This function will toggle pause on mouse click events
 def on_click(event):

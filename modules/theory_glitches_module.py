@@ -83,8 +83,15 @@ def loop_over_energies(energy_initial,energy_final,H_HKL,K_HKL,L_HKL,glitch_dict
         l_main_plane = L_HKL 
         energy = egy    
         bragg_angle = (180/m.pi)*m.asin(12398.4198/(energy*2*(5.43096/m.sqrt(h_main_plane*h_main_plane+k_main_plane*k_main_plane+l_main_plane*l_main_plane))))
-        print("bragg_angle",bragg_angle,"energy",energy)
-
+        
+        #print on the same line       
+        try:
+            print(len(text_to_print)*' ',end='\r')
+        except NameError:
+            pass
+        text_to_print = "bragg_angle "+str(bragg_angle)+" energy "+str(energy)
+        print(text_to_print,end='\r')
+        
         #k directly written in basis B_hkl
         #incoming ray
         kx,ky,kz = kx_ky_kz(crystal_type,bragg_angle)
