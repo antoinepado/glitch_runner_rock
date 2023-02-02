@@ -8,4 +8,4 @@ For the co k edge plot, McXtrace shows a clear discontinuity at the 7980 eV mark
 ![Si 111 McXtrace and ROCK data](./images/si_111_short_results.png)
 
 Created by Stéphane Bac and Antoine Padovani.  
-Many thanks for their precious help to the entire team of ROCK at SOLEIL, Emmanuel Farhi, Mads Bertelsen, Peter Willendrup and Erik Knudsen.
+Many thanks for their precious help to Laurent Barthe, Valerie Briois, Anthony Beauvois of the beamline ROCK at SOLEIL and to Emmanuel Farhi, Mads Bertelsen, Peter Willendrup and Erik Knudsen.
